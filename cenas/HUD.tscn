@@ -1,0 +1,32 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://scripts/HUD.gd" type="Script" id=1]
+
+[sub_resource type="DynamicFontData" id=50]
+font_path = "res://assets/fonts_pixel/pixel_art10x10/pixelart.ttf"
+
+[sub_resource type="DynamicFont" id=51]
+size = 10
+outline_size = 1
+outline_color = Color( 0, 0, 0, 1 )
+font_data = SubResource( 50 )
+
+[node name="HUD" type="Node2D"]
+script = ExtResource( 1 )
+
+[node name="score" type="Label" parent="."]
+margin_left = -18.0
+margin_top = 13.0
+margin_right = 73.0
+margin_bottom = 31.0
+custom_fonts/font = SubResource( 51 )
+text = "0"
+align = 1
+
+[node name="hud_Pontos" type="Label" parent="."]
+margin_left = 6.0
+margin_top = 2.0
+margin_right = 97.0
+margin_bottom = 20.0
+custom_fonts/font = SubResource( 51 )
+text = "PONTOS"
